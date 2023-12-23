@@ -9,5 +9,8 @@
     "icons":{
         "128":"validating.png"
     },
-    "permissions" : ["activeTab" , "tabs","scripting","declarativeContent"]
+    "permissions" : ["activeTab" , "tabs","scripting","declarativeContent"],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+      }
 }
