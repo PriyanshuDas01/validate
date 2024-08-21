@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 
+
 export class Nav extends PureComponent {
   constructor(props) {
     super(props);
@@ -12,13 +13,16 @@ export class Nav extends PureComponent {
 
   render() {
     return (
-      <div className="bg-gray-800 p-4">
+      <div className="h-20 w-full ">
         <div className="flex justify-between items-center">
-          <div className="text-xl text-white ml-4">Validate</div>
+          <div>
+          <div className="text-xl text-fuchsia-900 ml-4 mt-2 md:ml-8 lg:text-2xl lg:mt-4">Validate</div>
+          </div>
+        
           <div className="lg:hidden">
             <button
               onClick={this.toggleMenu}
-              className="text-white focus:outline-none"
+              className="text-fuchsia-900 mr-3 mt-2 focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -36,9 +40,9 @@ export class Nav extends PureComponent {
               </svg>
             </button>
           </div>
-          <ul className="hidden lg:flex space-x-4 mr-4">
-            <li className="text-xl text-white">Home</li>
-            <li className="text-xl text-white">About</li>
+          <ul className="hidden lg:flex space-x-8 mr-20 lg:mt-4">
+            <li className="text-xl text-fuchsia-900">Home</li>
+            <li className="text-xl text-fuchsia-900">About</li>
           </ul>
         </div>
         <ul
@@ -46,8 +50,8 @@ export class Nav extends PureComponent {
             this.state.isOpen ? 'block' : 'hidden'
           } lg:hidden mt-4 space-y-2`}
         >
-          <li className="text-xl text-white">Home</li>
-          <li className="text-xl text-white">About</li>
+          <li className="text-xl text-fuchsia-900 ml-4">Home</li>
+          <li className="text-xl text-fuchsia-900 ml-4">About</li>
         </ul>
       </div>
     );
