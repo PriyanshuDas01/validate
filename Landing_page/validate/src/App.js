@@ -1,19 +1,19 @@
 
 import './App.css';
+import Front from './components/Front';
 import Nav from './components/Nav';
 
 
 
-function App() {
+function App () {
   return (
+   
     <>
       <Nav />
+      <Front />
+    </>
+       
       
-     </>
-     
-    
-      
-    
   );
 }
 

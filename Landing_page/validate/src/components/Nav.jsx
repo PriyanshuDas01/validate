@@ -13,16 +13,16 @@ export class Nav extends PureComponent {
 
   render() {
     return (
-      <div className="h-20 w-full ">
-        <div className="flex justify-between items-center">
+      <div className=" w-full  z-40 absolute">
+        <div className="flex justify-between items-center bg-fuchsia-500 bg-opacity-10 h-16 rounded-lg">
           <div>
-          <div className="text-xl text-fuchsia-900 ml-4 mt-2 md:ml-8 lg:text-2xl lg:mt-4">Validate</div>
+          <div className="text-xl text-fuchsia-900 ml-4  md:ml-8 lg:text-2xl">Validate</div>
           </div>
         
           <div className="lg:hidden">
             <button
               onClick={this.toggleMenu}
-              className="text-fuchsia-900 mr-3 mt-2 focus:outline-none"
+              className="text-fuchsia-900 mr-3 focus:outline-none "
             >
               <svg
                 className="w-6 h-6"
@@ -40,7 +40,7 @@ export class Nav extends PureComponent {
               </svg>
             </button>
           </div>
-          <ul className="hidden lg:flex space-x-8 mr-20 lg:mt-4">
+          <ul className="hidden lg:flex space-x-8 mr-20 ">
             <li className="text-xl text-fuchsia-900">Home</li>
             <li className="text-xl text-fuchsia-900">About</li>
           </ul>
