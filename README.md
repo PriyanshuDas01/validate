@@ -9,3 +9,6 @@ Cybercrime is a growing issue in India and with the exponential growth in techno
 Validate is an idea for a verification system which will verify government and bank webpages for their legitimacy using the database consisting of official URLs of these webpages.
 
 Validate will also show that the digital transactions made to any account is a government owned account or not which will eliminate the cyber crimes involving fake government schemes and fake bank schemes.
+
+# For More detail refer to canva link below:
+>https://www.canva.com/design/DAF9I9AvHUQ/rafUMs96A4DsedPzog2THg/view
