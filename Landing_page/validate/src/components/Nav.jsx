@@ -47,11 +47,11 @@ export class Nav extends PureComponent {
         </div>
         <ul
           className={`${
-            this.state.isOpen ? 'block' : 'hidden'
+            this.state.isOpen ? 'block' : 'hidden' 
           } lg:hidden mt-4 space-y-2`}
         >
-          <li className="text-xl text-fuchsia-900 ml-4">Home</li>
-          <li className="text-xl text-fuchsia-900 ml-4">About</li>
+          <li className="text-xl text-fuchsia-900 ml-[37vh]">Home</li>
+          <li className="text-xl text-fuchsia-900 ml-[37vh]">About</li>
         </ul>
       </div>
     );
