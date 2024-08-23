@@ -40,7 +40,7 @@ export class Nav extends PureComponent {
               </svg>
             </button>
           </div>
-          <ul className="hidden lg:flex space-x-8 mr-20 ">
+          <ul className="hidden lg:flex space-x-8 lg:mr-5">
             <li className="text-xl text-fuchsia-900">Home</li>
             <li className="text-xl text-fuchsia-900">About</li>
           </ul>
@@ -50,8 +50,8 @@ export class Nav extends PureComponent {
             this.state.isOpen ? 'block' : 'hidden' 
           } lg:hidden mt-4 space-y-2`}
         >
-          <li className="text-xl text-fuchsia-900 ml-[37vh]">Home</li>
-          <li className="text-xl text-fuchsia-900 ml-[37vh]">About</li>
+          <li className="text-xl text-fuchsia-900 ml-3 ">Home</li>
+          <li className="text-xl text-fuchsia-900 ml-3 ">About</li>
         </ul>
       </div>
     );
