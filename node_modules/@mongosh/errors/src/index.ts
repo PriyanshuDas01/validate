@@ -1,10 +1,12 @@
 import { CommonErrors } from './common-errors';
 
-function getScopeFromErrorCode(code: string | null | undefined): string | undefined {
+function getScopeFromErrorCode(
+  code: string | null | undefined
+): string | undefined {
   if (!code) {
     return undefined;
   }
-  const match = code.match(/^([a-zA-Z0-9]+)-/);
+  const match = /^([a-zA-Z0-9]+)-/.exec(code);
   return !match ? undefined : match[1];
 }
 
@@ -63,12 +65,7 @@ class MongoshWarning extends MongoshBaseError {
 
 class MongoshDeprecatedError extends MongoshBaseError {
   constructor(message: string, metadata?: Object) {
-    super(
-      'MongoshDeprecatedError',
-      message,
-      CommonErrors.Deprecated,
-      metadata
-    );
+    super('MongoshDeprecatedError', message, CommonErrors.Deprecated, metadata);
   }
 }
 
@@ -94,5 +91,5 @@ export {
   MongoshUnimplementedError,
   MongoshDeprecatedError,
   MongoshCommandFailed,
-  CommonErrors
+  CommonErrors,
 };
